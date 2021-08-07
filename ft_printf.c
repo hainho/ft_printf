@@ -75,5 +75,6 @@ int	ft_printf(const char *format, ...)
 	count = ft_read_format(cur_str, count, ap);
 	if (count == -1)
 		return (-1);
+	va_end(ap);
 	return (count);
 }
